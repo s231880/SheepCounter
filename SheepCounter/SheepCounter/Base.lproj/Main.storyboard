@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u7J-nW-07G">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="SheepCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky_grass_fence_background" translatesAutoresizingMaskIntoConstraints="NO" id="CRm-ke-Ahc">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="38" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-IX-GqF">
+                                <rect key="frame" x="36" y="102" width="124" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="43"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRm-ke-Ahc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="17z-nc-gRn"/>
+                            <constraint firstAttribute="bottom" secondItem="CRm-ke-Ahc" secondAttribute="bottom" id="5qw-yi-LbF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CRm-ke-Ahc" secondAttribute="trailing" id="TaI-ne-ODm"/>
+                            <constraint firstItem="CRm-ke-Ahc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gev-tC-N4R"/>
+                            <constraint firstItem="CRm-ke-Ahc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kQu-Wt-X5E"/>
+                            <constraint firstItem="CRm-ke-Ahc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yTt-IA-6z6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ic0-lq-J2i"/>
+                    <connections>
+                        <outlet property="TextField" destination="iZ0-IX-GqF" id="Tm1-hu-heK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597" y="-593"/>
+        </scene>
+        <!--CreditsView-->
+        <scene sceneID="R0Q-zx-kDo">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="3wu-6W-vwa" userLabel="CreditsView" customClass="CreditsViewController" customModule="SheepCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWC-hF-eLg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky_grass_fence_background" translatesAutoresizingMaskIntoConstraints="NO" id="xMR-n9-w5c">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <textView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Developer : Tiziano Casu                              Music: &quot;Memories&quot;                                  by Cedric Vermue" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbX-jj-tK8">
+                                <rect key="frame" x="60" y="250" width="271" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hVB-LV-B8v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xMR-n9-w5c" firstAttribute="top" secondItem="NWC-hF-eLg" secondAttribute="top" id="ExM-5q-dJi"/>
+                            <constraint firstItem="xMR-n9-w5c" firstAttribute="trailing" secondItem="hVB-LV-B8v" secondAttribute="trailing" id="JrQ-uQ-mvC"/>
+                            <constraint firstItem="xMR-n9-w5c" firstAttribute="leading" secondItem="hVB-LV-B8v" secondAttribute="leading" id="Khk-oN-Uqp"/>
+                            <constraint firstAttribute="bottom" secondItem="xMR-n9-w5c" secondAttribute="bottom" id="lqT-1w-jHk"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="fbX-zg-IRS">
+                        <barButtonItem key="leftBarButtonItem" title="Back" width="50" style="done" id="Z6X-vL-4Gp">
+                            <imageReference key="image" image="chevron.backward" catalog="system" variableValue="0.0"/>
+                            <connections>
+                                <action selector="backBtnPressed:" destination="3wu-6W-vwa" id="3rR-ob-evW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdG-y2-tA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526.1538461538462" y="346.91943127962082"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="wvV-UO-ImW">
+            <objects>
+                <viewController id="u7J-nW-07G" customClass="MainViewController" customModule="SheepCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SCm-ge-iiF">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky_grass_fence_background" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-ER-Mcy">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Sheep Counter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trA-sD-z28">
+                                <rect key="frame" x="67" y="183" width="255" height="177"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="49"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMr-UH-eSG">
+                                <rect key="frame" x="93" y="354" width="203" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.6375743747" green="0.79241877790000004" blue="0.78580445050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start ">
+                                    <fontDescription key="titleFontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startBtnPressed:" destination="u7J-nW-07G" eventType="touchUpInside" id="UgW-XR-TRd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsW-18-YFX">
+                                <rect key="frame" x="93" y="417" width="203" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.6375743747" green="0.79241877790000004" blue="0.78580445050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Credits">
+                                    <fontDescription key="titleFontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="creditsBtnPRessed:" destination="u7J-nW-07G" eventType="touchUpInside" id="lr2-7T-9GQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZSW-Vj-JBW"/>
+                        <constraints>
+                            <constraint firstItem="dRF-ER-Mcy" firstAttribute="bottom" secondItem="SCm-ge-iiF" secondAttribute="bottom" id="9S8-cO-tKr"/>
+                            <constraint firstItem="VMr-UH-eSG" firstAttribute="centerX" secondItem="trA-sD-z28" secondAttribute="centerX" id="FAD-nw-6r4"/>
+                            <constraint firstItem="dRF-ER-Mcy" firstAttribute="top" secondItem="SCm-ge-iiF" secondAttribute="top" id="Fsi-ee-UQ5"/>
+                            <constraint firstItem="ZSW-Vj-JBW" firstAttribute="bottom" secondItem="trA-sD-z28" secondAttribute="bottom" constant="450" id="FvV-KF-8OR"/>
+                            <constraint firstItem="ZSW-Vj-JBW" firstAttribute="trailing" secondItem="trA-sD-z28" secondAttribute="trailing" constant="68" id="O2S-zY-ehW"/>
+                            <constraint firstItem="dRF-ER-Mcy" firstAttribute="centerY" secondItem="SCm-ge-iiF" secondAttribute="centerY" id="VED-Oi-Z3j"/>
+                            <constraint firstItem="VMr-UH-eSG" firstAttribute="leading" secondItem="AsW-18-YFX" secondAttribute="leading" id="ZTU-55-39X"/>
+                            <constraint firstItem="trA-sD-z28" firstAttribute="leading" secondItem="ZSW-Vj-JBW" secondAttribute="leading" constant="67" id="e5a-7E-c4T"/>
+                            <constraint firstItem="dRF-ER-Mcy" firstAttribute="trailing" secondItem="ZSW-Vj-JBW" secondAttribute="trailing" id="lYD-2R-Ezx"/>
+                            <constraint firstItem="AsW-18-YFX" firstAttribute="top" secondItem="VMr-UH-eSG" secondAttribute="bottom" constant="20" id="lZl-QH-8jd"/>
+                            <constraint firstItem="VMr-UH-eSG" firstAttribute="top" secondItem="ZSW-Vj-JBW" secondAttribute="top" constant="307" id="pnv-x7-ecn"/>
+                            <constraint firstItem="VMr-UH-eSG" firstAttribute="trailing" secondItem="AsW-18-YFX" secondAttribute="trailing" id="tLV-Ay-Krn"/>
+                            <constraint firstItem="VMr-UH-eSG" firstAttribute="leading" secondItem="ZSW-Vj-JBW" secondAttribute="leading" constant="93" id="u47-0Z-77Q"/>
+                            <constraint firstItem="trA-sD-z28" firstAttribute="top" secondItem="SCm-ge-iiF" secondAttribute="top" constant="183" id="xnY-Ie-XJc"/>
+                            <constraint firstItem="dRF-ER-Mcy" firstAttribute="leading" secondItem="ZSW-Vj-JBW" secondAttribute="leading" id="y1m-VQ-8x8"/>
+                            <constraint firstItem="dRF-ER-Mcy" firstAttribute="centerX" secondItem="SCm-ge-iiF" secondAttribute="centerX" id="ztK-4h-aD1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToCounter" id="4p4-hj-pgF"/>
+                        <segue destination="f4X-mW-Dsa" kind="presentation" identifier="goToCredits" id="70Y-Kl-sUE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPL-cb-3du" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632.30769230769226" y="-49.052132701421797"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bVI-g5-7Y6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="f4X-mW-Dsa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Yh-1i-ujB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3wu-6W-vwa" kind="relationship" relationship="rootViewController" id="xIE-tx-nN4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNS-au-Iav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596.9230769230769" y="346.91943127962082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="sky_grass_fence_background" width="256" height="448"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
